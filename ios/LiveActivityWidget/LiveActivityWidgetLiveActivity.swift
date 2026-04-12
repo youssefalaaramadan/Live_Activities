@@ -20,7 +20,7 @@ struct FootballLiveActivityView: View {
     let context: ActivityViewContext<LiveActivitiesAppAttributes>
 
     // Read data from shared UserDefaults
-    let sharedDefault = UserDefaults(suiteName: "group.com.youssef.liveactivities.4JV5D2RFJA")!
+    let sharedDefault = UserDefaults(suiteName: "group.com.youssef.liveactivities.4463737337")!
 
     var teamAName: String { sharedDefault.string(forKey: context.attributes.prefixedKey("teamAName")) ?? "Team A" }
     var teamBName: String { sharedDefault.string(forKey: context.attributes.prefixedKey("teamBName")) ?? "Team B" }
@@ -85,7 +85,7 @@ struct FootballLiveActivity: Widget {
         ActivityConfiguration(for: LiveActivitiesAppAttributes.self) { context in
             FootballLiveActivityView(context: context)
         } dynamicIsland: { context in
-            let shared = UserDefaults(suiteName: "group.com.youssef.liveactivities.4JV5D2RFJA")!
+            let shared = UserDefaults(suiteName: "group.com.youssef.liveactivities.4463737337")!
             let teamA = shared.string(forKey: context.attributes.prefixedKey("teamAName")) ?? "PSG"
             let teamB = shared.string(forKey: context.attributes.prefixedKey("teamBName")) ?? "CHE"
             let scoreA = shared.integer(forKey: context.attributes.prefixedKey("teamAScore"))
