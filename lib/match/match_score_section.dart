@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../score/score_widget.dart';
+import '../score/score_widget.dart';
 
 // widget for match score section
 class MatchScoreSection extends StatelessWidget {
